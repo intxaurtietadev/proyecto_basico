@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Basico</title>
+    <style>
+      /* RESET */
+      * {
+        padding: 0;
+        margin: 0;
+      
+      }
+      a{
+        text-decoration: none;
+      }
+
+      /* CODIGO PAGINA */
+
+      header,
+      nav,
+      main,
+      footer {
+        width: 80%;
+        margin: 0 auto;
+      }
+      header {
+        min-height: 8rem;
+        background-color: pink;
+      }
+      nav {
+        min-height: 4rem;
+        background-color: orange;
+      }
+      main {
+        min-height: 20rem;
+        background-color: lightblue;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      footer {
+        min-height: 7rem;
+        background-color: chartreuse;
+      }
+      .ponerBorde {
+        border: 0.3rem solid black;
+      }
+      main div {
+        width: 30%;
+        min-height: 5rem;
+        background-color: rgb(211, 211, 211);
+        border: 0.02rem solid red;
+      }
+      .izquierda {
+        background-color: rgba(203, 233, 69, 0.651);
+      }
+      .derecha {
+        background-color: rgba(61, 226, 61, 0.486);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <nav class="ponerBorder"></nav>
+
+    <main id="principal">
+      <div class="izquierda">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+        beatae dicta dolorum vero, quae placeat soluta earum recusandae
+        similique quibusdam.
+      </div>
+      <div class="derecha">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
+      <div class="centro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
+      <div class="2izquierda">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit provident
+        ut sint quaerat beatae quisquam ullam aspernatur consequuntur vitae
+        quae.
+      </div>
+    </main>
+
+    <footer class="ponerBorder"></footer>
+  </body>
+</html>
