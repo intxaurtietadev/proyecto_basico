@@ -22,7 +22,7 @@ footer {
   margin: 0 auto;
 }
 header {
-  min-height: 8rem;
+  min-height: 15rem;
   background-color: pink;
 }
 nav {
@@ -90,6 +90,23 @@ nav ul li a:hover {
   transition: 500ms;
 }
 
+header {
+  display: flex;
+  flex-direction: column; /*determina el eje principal, si es row es el horizontal y si es column es el vertical */
+  justify-content: center; /* justificacion del eje principal*/
+  align-items: center;
+}
+
+h1, h2, p {
+  width: 50%;
+  background-color: cadetblue;
+  margin: 0.5rem;
+  border: 0.3rem solid green;
+  text-align: center;
+
+}
+
+
 /* CODIGO PAGINA EN TABLET */
 @media screen and (max-width: 900px) {
     nav ul {
@@ -99,7 +116,7 @@ nav ul li a:hover {
     main div {
         width: 45%;
       }
-   
+      
     body {
       background-color: aqua;
     }
