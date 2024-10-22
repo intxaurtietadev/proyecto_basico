@@ -92,43 +92,54 @@ nav ul li a:hover {
 
 header {
   display: flex;
+}
+
+header>div {
+  border: 0.2rem solid red; 
+}
+
+header > div.logo {
+  width: 25%;
+}
+
+header > div.titulo {
+  width: 75%;
+  display: flex;
   flex-direction: column; /*determina el eje principal, si es row es el horizontal y si es column es el vertical */
   justify-content: center; /* justificacion del eje principal*/
   align-items: center;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   width: 50%;
   background-color: cadetblue;
   margin: 0.5rem;
   border: 0.3rem solid green;
   text-align: center;
-
 }
-
 
 /* CODIGO PAGINA EN TABLET */
 @media screen and (max-width: 900px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    main div {
-        width: 45%;
-      }
-      
-    body {
-      background-color: aqua;
-    }
-
+  nav ul {
+    flex-direction: column;
   }
+
+  main div {
+    width: 45%;
+  }
+
+  body {
+    background-color: aqua;
+  }
+}
 /* CODIGO PAGINA EN MOBILE */
 @media screen and (max-width: 602px) {
-    main div {
-        width: 90%;
-      }
-    body {
+  main div {
+    width: 90%;
+  }
+  body {
     background-color: blue;
   }
-
 }
