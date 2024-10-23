@@ -148,6 +148,15 @@ article.form{
 }
 
 
+/* FOOTER */
+
+footer{
+  background-image: url("img_corporativo/pattern.png");
+  background-size: 10%;
+  background-repeat: repeat-x;
+}
+
+
 /* CODIGO PAGINA EN TABLET */
 @media screen and (max-width: 900px) {
   nav ul {
