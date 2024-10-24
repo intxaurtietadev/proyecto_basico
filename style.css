@@ -14,7 +14,7 @@ ul {
 
 /* CODIGO PAGINA EN DESKTOP */
 
-body{
+body {
   padding-top: 7rem;
 }
 
@@ -35,15 +35,15 @@ nav {
   position: fixed;
   top: 0;
   left: 10%;
-  
 }
 
 main {
   min-height: 60rem;
   background-color: lightblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 0.8rem;
 }
 footer {
   min-height: 7rem;
@@ -52,6 +52,11 @@ footer {
 .ponerBorde {
   border: 0.3rem solid black;
 }
+main img {
+  width: 32%;
+}
+
+/*divs configuracion nicial 
 main div {
   width: 30%;
   min-height: 5rem;
@@ -69,7 +74,7 @@ main div a {
   color: rgb(92, 5, 5);
   font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 nav ul {
   border: 0.1rem solid blue;
   display: flex;
@@ -103,8 +108,8 @@ header {
   display: flex;
 }
 
-header>div {
-  border: 0.2rem solid red; 
+header > div {
+  border: 0.2rem solid red;
 }
 
 header > div.logo {
@@ -129,54 +134,71 @@ p {
   text-align: center;
 }
 
-
 /*CODIGO CONTACTO*/
 
-section{
+section {
   width: 100%;
   background-color: chartreuse;
   min-height: 20rem;
   display: flex;
 }
-article.mapa{
+article.mapa {
   width: 40%;
 }
-article.form{
+article.form {
   width: 60%;
   background-color: darkgray;
   min-height: 20rem;
 }
 
-
 /* FOOTER */
 
-footer{
+footer {
   background-image: url("img_corporativo/pattern.png");
   background-size: 10%;
   background-repeat: repeat-x;
 }
-
 
 /* CODIGO PAGINA EN TABLET */
 @media screen and (max-width: 900px) {
   nav ul {
     flex-direction: column;
   }
+header{
+  display: none;
+}
+  main {
+    justify-content: space-between;
+  }
 
-  main div {
+  main img {
     width: 45%;
   }
 
   body {
     background-color: aqua;
+    padding-top: 0;
+  }
+  nav {
+    position: static;
+  }
+  footer{
+    background-size: 16%;
   }
 }
 /* CODIGO PAGINA EN MOBILE */
 @media screen and (max-width: 602px) {
-  main div {
+  main {
+    justify-content: center;
+  }
+
+  main img {
     width: 90%;
   }
   body {
     background-color: blue;
+  }
+  footer{
+    background-size: 25%;
   }
 }
